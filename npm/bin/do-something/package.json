@@ -1,0 +1,5 @@
+{
+  "name": "cli-example",
+  "version": "1.0.0",
+  "bin": "./do-sometihng.js"
+}
