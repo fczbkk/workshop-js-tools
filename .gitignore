@@ -2,3 +2,4 @@
 node_modules/
 /code_quality/documentation/docs
 build/
+/testing/karma/coverage
