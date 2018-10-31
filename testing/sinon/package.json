@@ -1,0 +1,23 @@
+{
+  "name": "sinon-example",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "karma start ./karma.conf.js",
+    "dev": "npm run test -- --no-single-run --auto-watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "karma": "^3.1.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.2.0",
+    "karma-mocha-reporter": "^2.2.0",
+    "karma-webpack": "^3.0.5",
+    "mocha": "^5.2.0",
+    "sinon": "^7.1.0",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  }
+}

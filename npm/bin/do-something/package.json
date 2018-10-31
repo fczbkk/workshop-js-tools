@@ -1,5 +1,5 @@
 {
-  "name": "cli-example",
+  "name": "do-something",
   "version": "1.0.0",
-  "bin": "./do-sometihng.js"
+  "bin": "./do-something.js"
 }

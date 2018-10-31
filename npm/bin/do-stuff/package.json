@@ -1,0 +1,8 @@
+{
+  "name": "do-stuff",
+  "version": "1.0.0",
+  "bin": {
+    "do-first-thing": "first.js",
+    "do-second-thing": "second.js"
+  }
+}

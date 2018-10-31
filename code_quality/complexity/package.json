@@ -1,0 +1,10 @@
+{
+  "name": "complexity-example",
+  "version": "1.0.0",
+  "devDependencies": {
+    "complexity-report": "^2.0.0-alpha"
+  },
+  "scripts": {
+    "complexity": "cr -o ./report.md -f markdown ./*.js"
+  }
+}

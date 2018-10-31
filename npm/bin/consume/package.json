@@ -1,0 +1,17 @@
+{
+  "name": "consume-clis",
+  "version": "1.0.0",
+  "dependencies": {
+    "do-async": "file:../do-async",
+    "do-error": "file:../do-error",
+    "do-something": "file:../do-something",
+    "do-stuff": "file:../do-stuff"
+  },
+  "scripts": {
+    "do-simple-stuff": "do-something",
+    "do-async-stuff": "do-async && do-something",
+    "do-error-stuff": "do-error",
+    "do-chain-stuff": "do-error || do-something"
+  },
+  "devDependencies": {}
+}

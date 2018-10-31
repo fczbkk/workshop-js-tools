@@ -1,0 +1,5 @@
+{
+  "name": "do-error",
+  "version": "1.0.0",
+  "bin": "./do-error.js"
+}

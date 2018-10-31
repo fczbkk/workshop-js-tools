@@ -1,1 +1,3 @@
-console.log('Doing first thing.')
+#!/usr/bin/env node
+
+console.log('Doing second thing.')

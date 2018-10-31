@@ -1,0 +1,13 @@
+{
+  "name": "lint-example",
+  "version": "1.0.0",
+  "devDependencies": {
+    "eslint": "^5.8.0"
+  },
+  "scripts": {
+    "lint": "eslint ./src/**/*.js",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:strict": "npm run lint -- --max-warnings 0"
+  },
+  "dependencies": {}
+}

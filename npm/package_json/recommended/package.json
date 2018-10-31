@@ -1,0 +1,23 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "This is my project.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fczbkk/workshop-js-tools.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Riki Fridrich",
+    "email": "riki@fczbkk.com",
+    "url": "http://fczbkk.com/"
+  },
+  "homepage": "https://github.com/fczbkk/workshop-js-tools#readme",
+  "bugs": {
+    "url": "https://github.com/fczbkk/workshop-js-tools/issues"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {}
+}

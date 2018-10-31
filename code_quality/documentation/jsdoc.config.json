@@ -1,0 +1,21 @@
+{
+  "source": {
+    "include": ["./src/"],
+    "includePattern": ".+\\.js(doc)?$"
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "opts": {
+    "encoding": "utf8",
+    "destination": "./docs/",
+    "recurse": true,
+    "tutorials": "./info/",
+    "readme": "./README.md"
+  },
+  "templates": {
+    "default": {
+      "outputSourceFiles": false
+    }
+  }
+}

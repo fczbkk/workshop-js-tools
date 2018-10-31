@@ -1,0 +1,9 @@
+{
+  "name": "publish-example",
+  "version": "1.0.0",
+  "scripts": {
+    "preversion": "npm run lint && npm run test",
+    "version": "npm run build && npm run changelog && npm run doc && git add -A",
+    "postversion": "git push && git push --tags"
+  }
+}

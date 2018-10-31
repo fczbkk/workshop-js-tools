@@ -1,0 +1,15 @@
+{
+  "name": "cli-example",
+  "version": "1.0.0",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "cleanup": "rimraf ./build",
+    "build": "babel ./src --out-dir ./build",
+    "prebuild": "npm run cleanup",
+    "build-to-custom": "npm run build -- --out-dir ./alternative-build"
+  }
+}

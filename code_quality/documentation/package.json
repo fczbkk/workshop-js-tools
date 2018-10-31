@@ -1,0 +1,13 @@
+{
+  "name": "documentation-example",
+  "version": "1.0.0",
+  "devDependencies": {
+    "documentation": "^8.1.2",
+    "jsdoc": "^3.5.5"
+  },
+  "scripts": {
+    "doc": "jsdoc -c ./jsdoc.config.json",
+    "doc:readme": "documentation readme ./src/index.js -s 'Documentation'"
+  },
+  "dependencies": {}
+}
