@@ -1,0 +1,16 @@
+{
+  "name": "browser-sync-example",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  },
+  "scripts": {
+    "server": "node server.js",
+    "sync:local": "browser-sync start --server --files \"src/*.js\"",
+    "sync:proxy": "browser-sync start --proxy \"localhost:3000\" --files \"src/*.js\"",
+    "serve-and-sync": "npm run server & npm run sync:proxy"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
