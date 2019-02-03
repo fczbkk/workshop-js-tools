@@ -2,13 +2,18 @@
   "name": "browser-sync-example",
   "version": "1.0.0",
   "devDependencies": {
-    "browser-sync": "^2.26.3"
+    "browser-sync": "^2.26.3",
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0"
   },
   "scripts": {
+    "build-env": "babel ./src --out-dir ./build --config-file ./babel.config.json --watch",
     "server": "node server.js",
-    "sync:local": "browser-sync start --server --files \"src/*.js\"",
+    "sync:local": "browser-sync start --server --files \"build/*.js\"",
     "sync:proxy": "browser-sync start --proxy \"localhost:3000\" --files \"src/*.js\"",
-    "serve-and-sync": "npm run server & npm run sync:proxy"
+    "serve-and-sync": "npm run server & npm run sync:proxy",
+    "dev": "npm run build-env & npm run sync:local"
   },
   "dependencies": {
     "express": "^4.16.4"
