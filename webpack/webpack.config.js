@@ -12,6 +12,12 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        loaders: [
+          'babel-loader'
+        ]
+      },
+      {
         test: /\.svg$/,
         loaders: [
           'file-loader',
