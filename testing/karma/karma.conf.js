@@ -16,27 +16,19 @@ module.exports = function (config) {
           {
             test: /\.js$/,
             exclude: /\.spec\.js$/,
-            use: { loader: 'istanbul-instrumenter-loader' }
           }
         ]
       }
     },
-    coverageIstanbulReporter: {
-      reports: [
-        'text-summary',
-        'html'
-      ],
-      fixWebpackSourcePaths: true
-    },
-    reporters: ['progress', 'coverage-istanbul'],
+    reporters: ['progress'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: false,
+    autoWatch: true,
     browsers: [
       'PhantomJS',
       'ChromeHeadless'
     ],
-    singleRun: true
+    singleRun: false
   })
 }
