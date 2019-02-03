@@ -726,17 +726,17 @@ function importedFunction () {
 /***/ (function(module, exports, __webpack_require__) {
 
 const {importedFunction} = __webpack_require__(/*! ./external-functions */ "./src/external-functions.js")
-const symbols = __webpack_require__(/*! ./symbols.svg */ "./src/symbols.svg")
-
-__webpack_require__(/*! ./style.css */ "./src/style.css")
 
 console.log('main file')
 importedFunction()
 
+const symbols = __webpack_require__(/*! ./symbols.svg */ "./src/symbols.svg")
 const svg_image = document.body.appendChild(document.createElement('img'))
 svg_image.setAttribute('src', symbols)
 svg_image.setAttribute('id', 'test_image')
 
+
+__webpack_require__(/*! ./style.css */ "./src/style.css")
 
 
 /***/ }),
