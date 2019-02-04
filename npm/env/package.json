@@ -1,0 +1,15 @@
+{
+  "name": "env-example",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./index.js",
+    "start:dev": "cross-env NODE_ENV=development node ./index.js",
+    "start:prod": "cross-env NODE_ENV=production node ./index.js",
+    "build": "if-env NODE_ENV=production && npm run build:prod || npm run build:dev",
+    "build:dev": "node ./dev.js",
+    "build:prod": "node ./prod.js"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}
