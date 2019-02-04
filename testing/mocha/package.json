@@ -2,8 +2,11 @@
   "name": "testing-mocha",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha index.spec.js",
-    "dev": "npm run test -- --watch"
+    "test": "mocha ./index.spec.js",
+    "dev": "npm run test -- --watch",
+    "leak:test": "mocha ./leaks.spec.js",
+    "leak:detect": "mocha ./leaks.spec.js --check-leaks",
+    "leak:expect": "mocha ./leaks.spec.js --check-leaks --globals xxx"
   },
   "devDependencies": {
     "mocha": "^5.2.0"

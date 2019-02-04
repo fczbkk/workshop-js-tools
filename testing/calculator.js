@@ -9,6 +9,6 @@ function doComplicatedMath (input, callback) {
 }
 
 module.exports = {
-  add: add,
-  doComplicatedMath: doComplicatedMath
+  add,
+  doComplicatedMath
 };
