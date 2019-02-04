@@ -33,7 +33,8 @@ describe('Chai assertion styles', function () {
     it('has useful methods for objects', function () {
       const my_object = {aaa: {bbb: 'ccc'}};
       assert.property(my_object, 'aaa');
-      assert.deepProperty(my_object, 'aaa.bbb');
+      assert.nestedProperty(my_object, 'aaa.bbb');
+      assert.deepPropertyVal(my_object, 'aaa', {bbb: 'ccc'});
     });
 
   });
