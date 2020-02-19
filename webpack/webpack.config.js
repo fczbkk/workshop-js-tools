@@ -2,7 +2,7 @@ const path = require('path')
 const autoprefixer = require('autoprefixer')
 
 module.exports = {
-  mode: 'development',
+  mode: (process.env.NODE_ENV === 'production') ? 'production' : 'development',
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, 'build'),
