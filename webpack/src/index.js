@@ -1,4 +1,5 @@
 const {importedFunction} = require('./external-functions')
+
 const symbols = require('./symbols.svg')
 
 require('./style.css')
@@ -9,4 +10,9 @@ importedFunction()
 const svg_image = document.body.appendChild(document.createElement('img'))
 svg_image.setAttribute('src', symbols)
 svg_image.setAttribute('id', 'test_image')
+
+import('./dynamically-imported-file.js' /* webpackChunkName: 'dynamically-imported-file' */)
+  .then(function (result) {
+    result.default()
+  })
 
