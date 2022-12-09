@@ -16,6 +16,6 @@
     "dev": "npm run build-env & npm run sync:local"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.3"
   }
 }
